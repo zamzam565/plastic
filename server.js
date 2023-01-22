@@ -52,6 +52,7 @@ appExpress.post("/addItems", async (req, res) => {
       res.status(201).send({
         msg: "New Item Is Save Successfully",
         data_is_save: true,
+        docResult: doc,
       });
     } else {
       res.status(201).send({
